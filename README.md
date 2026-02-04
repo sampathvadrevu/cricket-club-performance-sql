@@ -36,14 +36,13 @@ remaining suitable for SQL-based analysis.
 ---
 
 ## Project Structure
-The project is organized to follow a realistic SQL analytics workflow:
 
-cricket-club-performance-sql/
-│
-├── 01_schema.sql
-├── 02_data_insertion.sql
-├── 03_player_performance_analysis.sql
-└── README.md
+The project follows a simple and clear SQL analytics workflow:
+
+- **01_schema.sql** – Database schema definition  
+- **02_data_insertion.sql** – Season-level data insertion  
+- **03_player_performance_analysis.sql** – Business-driven performance analysis  
+- **README.md** – Project documentation
 
 
 
@@ -101,6 +100,9 @@ To reproduce the analysis, execute the SQL files in the following order:
 - Derived metrics and calculations
 - NULL handling and safe arithmetic operations
 - Role-based partitioning for fair comparison
+
+---
+
 ## Tools
 - SQL Server
 - VS Code
