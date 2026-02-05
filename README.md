@@ -123,9 +123,33 @@ to incrementally update season statistics.
 
 ---
 
+## Tableau Dashboard (Visualization Layer)
+
+The insights from the SQL-based cricket performance analysis are visualized using Tableau Public.
+
+**Dashboard Highlights:**
+- Batting efficiency (Runs per Innings)
+- Bowling efficiency (Wickets per Innings)
+- Fielding impact (Total Dismissals)
+- Key performance indicators (KPIs):
+  - Highest individual score
+  - Highest wickets taken
+  - Most hundreds
+  - Most five-wicket hauls
+- Role-based filtering (Batsman, Bowler, All-Rounder)
+
+🔗 **Tableau Public Dashboard Link:**  
+https://public.tableau.com/views/CricketClubPerformanceAnalysis/Dashboard1
+
+
+---
+
+
 ## Tools
 - SQL Server
 - VS Code
+- Tableau Public
+
 
 ---
 
