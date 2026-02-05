@@ -40,11 +40,10 @@ remaining suitable for SQL-based analysis.
 The project follows a simple and clear SQL analytics workflow:
 
 - **01_schema.sql** – Database schema definition  
-- **02_data_insertion.sql** – Season-level data insertion  
+- **02_data_insertion.sql** – Initial season-level data insertion  
 - **03_player_performance_analysis.sql** – Business-driven performance analysis  
-- **README.md** – Project documentation
-
-
+- **04_post_match_stat_update.sql** – Template for incremental post-match stat updates  
+- **README.md** – Project documentation  
 
 ---
 
@@ -62,13 +61,15 @@ This file establishes the structural foundation required for all analysis.
 ---
 
 ### `02_data_insertion.sql`
-Populates the database tables with season-level aggregated player statistics.
+Populates the database tables with initial season-level aggregated player statistics.
 
 Includes:
 - Player information
 - Batting performance data
 - Bowling performance data
 - Fielding contribution data
+
+This script is intended to be run once during initial setup.
 
 ---
 
@@ -85,11 +86,29 @@ This file represents the core analytical logic of the project.
 
 ---
 
+### `04_post_match_stat_update.sql`
+Provides a **transactional update template** for incrementally updating
+season-level player statistics after each match.
+
+Key characteristics:
+- One match is handled within a single transaction
+- Only players who participated in the match are updated
+- Only relevant stats (batting, bowling, fielding) are incremented
+- Derived metrics are intentionally excluded from manual updates
+
+This file is designed as a reusable reference script and is executed
+only when post-match updates are required.
+
+---
+
 ## Execution Order
-To reproduce the analysis, execute the SQL files in the following order:
-1. 01_schema.sql
-2. 02_data_insertion.sql
-3. 03_player_performance_analysis.sql
+To reproduce the analysis from scratch, execute the SQL files in the following order:
+1. `01_schema.sql`
+2. `02_data_insertion.sql`
+3. `03_player_performance_analysis.sql`
+
+`04_post_match_stat_update.sql` is executed **only after matches are played**
+to incrementally update season statistics.
 
 ---
 
@@ -100,12 +119,15 @@ To reproduce the analysis, execute the SQL files in the following order:
 - Derived metrics and calculations
 - NULL handling and safe arithmetic operations
 - Role-based partitioning for fair comparison
+- Transactions (`BEGIN TRANSACTION`, `COMMIT`, `ROLLBACK`)
 
 ---
 
 ## Tools
 - SQL Server
 - VS Code
+
+---
 
 ## Author
 Sai Sampath Vadrevu
