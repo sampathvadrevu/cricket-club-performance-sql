@@ -1,16 +1,14 @@
 # Player Performance & Team Selection Analysis – Season 4
 
-SQL-based cricket player performance and team selection analysis.
-
----
+SQL-based cricket player performance and team selection analysis
 
 ## Overview
-This project analyzes season-level cricket player performance data using SQL to
-support objective, data-driven team selection decisions.
 
-The analysis evaluates batting efficiency, bowling efficiency, all-rounder
-contribution, and overall player value, with fair comparisons made within
-player roles.
+This project analyzes season-level cricket player performance data using SQL to support objective, data-driven team selection decisions.
+
+The analysis evaluates batting efficiency, bowling efficiency, fielding impact, and all-rounder contribution, with fair comparisons made within defined player roles (Batsman, Bowler, All-Rounder).
+
+To make the insights accessible to non-technical stakeholders, the analytical results are visualized using Tableau Public, enabling interactive exploration of player performance and key selection metrics.
 
 ---
 
