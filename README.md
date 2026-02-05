@@ -20,6 +20,16 @@ https://public.tableau.com/views/CricketClubPerformanceAnalysis/Dashboard1
 
 ---
 
+## 📸 Dashboard Previews
+
+### Power BI Report
+![Power BI Dashboard](images/PowerBI_report_preview.png)
+
+### Tableau Public Report
+![Tableau Dashboard](images/Tableau_report_preview.png)
+
+
+---
 ## Overview
 
 This project analyzes season-level cricket player performance data using SQL to support objective, data-driven team selection decisions.
