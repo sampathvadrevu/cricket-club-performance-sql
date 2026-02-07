@@ -14,7 +14,7 @@ https://app.powerbi.com/links/HggdP1UfCE?ctid=4cf55f5c-5261-403a-abf8-89b8f50098
 ---
 
 ### 🔗 Tableau Public Dashboard (Open Access)  
-https://public.tableau.com/views/CricketClubPerformanceAnalysis/Dashboard1  
+(https://public.tableau.com/app/profile/sai.sampath.vadrevu/viz/CricketClubPerformanceAnalysis/MainDashboard)
 
 (No login required)
 
