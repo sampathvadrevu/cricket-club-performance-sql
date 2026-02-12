@@ -168,7 +168,11 @@ Insights from the SQL analysis are presented through:
 - Batting efficiency (Runs per Innings)  
 - Bowling efficiency (Wickets per Innings)  
 - Fielding impact (Total Dismissals)  
-- Interactive performance exploration  
+- Interactive performance exploration
+
+### Tableau Dashboard:
+Open the .twbx file inside the /tableau folder using Tableau Public Desktop.
+
 
 ---
 
