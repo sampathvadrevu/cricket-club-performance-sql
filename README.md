@@ -6,12 +6,6 @@ SQL-based cricket player performance and team selection analysis
 
 ## 📊 Interactive Dashboards
 
-### 🔗 Power BI Dashboard (Primary – Interactive & KPI-focused)  
-https://app.powerbi.com/links/HggdP1UfCE?ctid=4cf55f5c-5261-403a-abf8-89b8f50098e1&pbi_source=linkShare  
-
-⚠️ Note: Viewing this report requires a Power BI account (free sign-in is sufficient).
-
----
 
 ### 🔗 Tableau Public Dashboard (Open Access)  
 (https://public.tableau.com/app/profile/sai.sampath.vadrevu/viz/CricketClubPerformanceAnalysis/MainDashboard)
